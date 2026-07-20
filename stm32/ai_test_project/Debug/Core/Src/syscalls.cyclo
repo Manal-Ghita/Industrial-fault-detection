@@ -1,0 +1,6 @@
+../Core/Src/syscalls.c:3:27:_close	1
+../Core/Src/syscalls.c:4:27:_fstat	1
+../Core/Src/syscalls.c:5:27:_isatty	1
+../Core/Src/syscalls.c:6:27:_lseek	1
+../Core/Src/syscalls.c:7:27:_read	1
+../Core/Src/syscalls.c:8:27:_write	1
