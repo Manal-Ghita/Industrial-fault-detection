@@ -8,7 +8,7 @@
 
 > **End-to-end deep learning pipeline for predictive maintenance — from data analysis to real-time inference on a Cortex-M4 microcontroller.**
 
----
+--- 
 
 ## Overview
 
