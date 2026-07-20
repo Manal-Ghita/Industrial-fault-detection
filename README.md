@@ -1,0 +1,1 @@
+# Industrial-fault-detection
