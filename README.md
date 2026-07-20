@@ -92,14 +92,14 @@ Target     : STM32L4R9AIIx (Cortex-M4, 2MB Flash, 640KB RAM)
 
 A binary handshake over UART (115200 baud) keeps both sides synchronized:
 
+```text
 PC                            STM32
-|--- 0xAB 0x00 ----------->  |   Ready to send
-|<-- 0xCD 0x00 ------------  |   Ready to receive
-|--- 6 × float32  (24B) -->  |   Normalized sensor features
-|                            |   Cortex-M4 runs DNN inference
-|<-- 5 × uint8  (5B)  -----  |   Class scores (value × 255)
-
----
+ |--- 0xAB 0x00 ----------->  |   Ready to send
+ |<-- 0xCD 0x00 ------------  |   Ready to receive
+ |--- 6 × float32  (24B) -->  |   Normalized sensor features
+ |                            |   Cortex-M4 runs DNN inference
+ |<-- 5 × uint8  (5B)  -----  |   Class scores (value × 255)
+```
 
 ## Dataset
 
@@ -121,6 +121,7 @@ PC                            STM32
 
 ## Repository Structure
 
+```text
 industrial-fault-detection-stm32/
 ├── notebooks/
 │   └── TP_IA_EMBARQUEE_fini.ipynb    ← Full training pipeline (Google Colab)
@@ -140,8 +141,7 @@ industrial-fault-detection-stm32/
 │   └── test_ai4i.py                  ← PC-side test script
 ├── requirements.txt
 └── README.md
-
----
+```
 
 ## How to Run
 
